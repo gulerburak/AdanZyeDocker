@@ -1,0 +1,1 @@
+docker container run -d -p 80:80 -v C:\AdanZyeDocker\kisim3\bolum28\websitesi:/usr/share/nginx/html nginx
