@@ -1,0 +1,57 @@
+"List containers"
+docker container ls
+docker container ls -a
+
+"delete containers"
+docker container prune
+
+"List images"
+docker image ls
+
+"delete all images"
+docker image rm
+
+"List volumes"
+docker volume ls
+
+"delete all volumes"
+docker volume prune
+
+"pull images"
+docker image pull nginx
+
+"create a container from an image"
+docker container run ozgurozturknet/app1
+
+"create a detached container"
+docker container run -d httpd:alpine 
+
+"look up the logs of a container"
+docker logs strange_moser
+
+"stop container"
+docker container stop strange_moser
+
+"start container"
+docker container start strange_moser
+
+"delete container without stopping it"
+docker container rm -f strange_moser
+
+"run container named websunucu, detached and from port 80:80"
+docker container run --name websunucu -d -p 80:80 ozgurozturknet/adanzyedocker
+
+"connect container with sh"
+docker container exec -it websunucu sh
+
+"change directory to /usr/local/apache2/htdocs"
+cd /usr/local/apache2/htdocs
+
+"add some text to existing html file"
+echo "test text" >> index.html
+
+"run alpine container with custom command ls"
+docker container run -it alpine ls
+
+"create a volume"
+docker volume create alistirma1
