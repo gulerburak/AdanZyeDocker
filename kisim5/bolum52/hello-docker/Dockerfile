@@ -6,7 +6,7 @@ FROM nginx:latest
 
 # label ile de key value pair olarak bu imajla ilgili bilgileri giriyoruz. her iki talimat da imajın içindeki sistemle alakalı değil.
 # her ikisi de imajın metadatasında saklanıyor. imajla alakali bilgiler. 
-LABEL maintainer="Ozgur Ozturk @ozgurozturknet"
+LABEL maintainer="Burak Guler"
 LABEL version="1.0"
 LABEL name="hello-docker"
 
