@@ -1,0 +1,4 @@
+FROM mcr.microsoft.com/java/jre:8-zulu-alpine
+COPY /uygulama /usr/src/uygulama
+WORKDIR /usr/src/uygulama
+CMD ["java", "uygulama"]
