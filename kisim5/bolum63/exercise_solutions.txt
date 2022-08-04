@@ -1,0 +1,11 @@
+docker ps
+docker container prune 
+
+docker logout
+docker login
+
+docker image push burakguler/image
+
+docker image tag ubuntu:latest burakguler/ubuntu:latest
+docker image push burakguler/ubuntu:latest
+
